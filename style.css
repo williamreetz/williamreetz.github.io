@@ -1,61 +1,69 @@
-html, body{
-    margin:0;
-    width: 100vw;
-    height: 100vh;
+html,
+body {
+  font-family: Helvetica, sans-serif, Arial;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
 }
 
-.title{
-    font-size: 1.5em;
-    font-weight: 300;
-    display: block;
-    line-height: 0.75;
+.title {
+  font-size: 1.5em;
+  font-weight: 300;
+  display: block;
 }
-.sub_title{
-    font-weight: 200;
-    font-size: 0.75em;
-}
-
-.container{
-    background: rgb(20, 25, 35);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.sub_title {
+  font-weight: 200;
+  font-size: 0.75em;
 }
 
-.card{
-    display: flex;
-    padding: 10px;
-    color: white;
-    align-items: center;
-    justify-content: center;
+.container {
+  background: rgb(20, 25, 35);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  padding: 10px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  font-size: 2em;
+  padding: 10px;
+}
+
+.profile_picture {
+  padding: 10px;
+  border-radius: 100%;
+  width: 25%;
+  height: 25%;
+}
+.icon {
+  margin-top: 0.25em;
+  padding: 5px;
+  user-select: none;
+  color: #fff;
+  font-size: 2em;
+}
+
+.icon:hover {
+  color: #bcddff;
+  cursor: pointer;
 }
 
 @media (max-width: 50em) {
-    .card{
-        flex-direction: column;
-    }
- }
-
-.information{
-    font-size: 2em;
-    padding: 10px;
-}
-
-.profile_picture{
-    padding: 10px;
-    border-radius: 100%;
-    width: 25%;
-    height: 25%;
-}
-.icon{
-    padding: 5px;
-    user-select: none;
-    color: #fff;
-    font-size: 2em;
-}
-.icon:hover{
-    color: #bcddff;
-    cursor: pointer;
+  .card {
+    flex-direction: column;
+  }
+  .information {
+    align-items: center;
+  }
 }
